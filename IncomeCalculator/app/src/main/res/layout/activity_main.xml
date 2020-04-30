@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <EditText
+        android:id="@+id/EdTe_nameUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите имя пользователя"
+        android:textColor="@color/Navy"
+        android:textSize="22sp" />
+    <Button
+        android:id="@+id/bt_restartTextUser"
+        android:layout_below="@id/EdTe_nameUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Сброс имени пользователя"
+        android:onClick="onClickResUser"/>
+    <EditText
+        android:id="@+id/EdTe_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите пароль из 8 символов"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/bt_restartTextUser"
+        android:textColor="@color/Navy"
+        android:textSize="22sp" />
+    <Button
+        android:id="@+id/bt_restartTextPassword"
+        android:layout_below="@id/EdTe_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Сброс пароля"
+        android:onClick="onClickRePass"/>
+    <EditText
+        android:id="@+id/EdTe_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите почту (gmail или email)"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/bt_restartTextPassword"
+        android:textColor="@color/Navy"
+        android:textSize="22sp" />
+    <Button
+        android:id="@+id/bt_restartTextGmail"
+        android:layout_below="@id/EdTe_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Сброс почты"
+        android:onClick="onClickResMail"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:textColor="@color/colorRed"
+        android:text="Зарегистрироваться"/>
+</RelativeLayout>
